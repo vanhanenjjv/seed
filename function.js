@@ -2,9 +2,9 @@
  * @param {import("aws-lambda").APIGatewayProxyEventV2} event
  * @returns {import("aws-lambda").APIGatewayProxyResultV2}
  */
-export function handler(event) {
+export async function handler(event) {
   return {
-    status: 200,
+    statusCode: 200,
     headers: {
       'Content-Type': 'application/json'
     },
