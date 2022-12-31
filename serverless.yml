@@ -1,0 +1,16 @@
+service: "hello"
+
+provider:
+  name: "aws"
+  stage: "dev"
+  region: "eu-north-1"
+  runtime: "nodejs18.x"
+  memorySize: "512"
+  logRetentionInDays: "7"
+  architecture: "arm64"
+
+functions:
+  hello:
+    handler: "function.handler"
+    events:
+      - httpApi: "GET /"

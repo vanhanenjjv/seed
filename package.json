@@ -1,0 +1,21 @@
+{
+  "name": "seed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "n/a",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanhanenjjv/seed.git"
+  },
+  "keywords": [],
+  "author": "Janne Vanhanen <janne.vanhanen@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vanhanenjjv/seed/issues"
+  },
+  "homepage": "https://github.com/vanhanenjjv/seed#readme",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.109"
+  }
+}
