@@ -1,4 +1,4 @@
-service: "hello"
+service: "service"
 
 provider:
   name: "aws"
