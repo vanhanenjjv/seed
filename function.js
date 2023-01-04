@@ -8,7 +8,9 @@ let logger = null
  * @returns {Console}
  */
 function makeLogger() {
-  return new Console()
+  return new Console({
+    stdout: process.stdout
+  })
 }
 
 /**
