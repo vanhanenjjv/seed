@@ -3,6 +3,8 @@
  * @returns {import("aws-lambda").APIGatewayProxyResultV2}
  */
 export async function handler(event) {
+  console.error('something went wrong')
+
   return {
     statusCode: 200,
     headers: {
