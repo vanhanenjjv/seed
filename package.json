@@ -18,5 +18,8 @@
   "homepage": "https://github.com/vanhanenjjv/seed#readme",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.109"
+  },
+  "dependencies": {
+    "@aws-lambda-powertools/logger": "^1.5.0"
   }
 }
