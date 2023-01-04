@@ -1,22 +1,18 @@
-// import { Logger, createLogger } from '@aws-lambda-powertools/logger'
-import { Console } from 'console'
+import { Logger } from '@aws-lambda-powertools/logger'
 
-/** @type {Console} */
+/** @type {import('@aws-lambda-powertools/logger').Logger | null} */
 let logger = null
 
 /**
- * @returns {Console}
+ * @returns {import('@aws-lambda-powertools/logger').Logger}
  */
 function makeLogger() {
-  return new Console({
-    stdout: process.stdout,
-    stderr: process.stderr,
-
+  return new Logger({
   })
 }
 
 /**
- * @returns {Console}
+ * @returns {import('@aws-lambda-powertools/logger').Logger}
  */
 function getLogger() {
   if (logger === null) logger = makeLogger()
