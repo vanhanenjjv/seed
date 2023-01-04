@@ -1,18 +1,18 @@
-import { Logger } from '@aws-lambda-powertools/logger'
+// import { Logger, createLogger } from '@aws-lambda-powertools/logger'
+import { Console } from 'console'
 
-/** @type {import('@aws-lambda-powertools/logger').Logger | null} */
+/** @type {Console} */
 let logger = null
 
 /**
- * @returns {import('@aws-lambda-powertools/logger').Logger}
+ * @returns {Console}
  */
 function makeLogger() {
-  return new Logger({
-  })
+  return new Console()
 }
 
 /**
- * @returns {import('@aws-lambda-powertools/logger').Logger}
+ * @returns {Console}
  */
 function getLogger() {
   if (logger === null) logger = makeLogger()
@@ -26,12 +26,7 @@ function getLogger() {
 export async function handler(event) {
   const logger = getLogger()
 
-  logger.error('something went wrong', {
-    message: 'something went wrong',
-    errorType: 'Error',
-    errorMessage: 'something went wrong',
-    stack: []
-  })
+  logger.error('something went wrong')
 
   return {
     statusCode: 200,
