@@ -1,4 +1,4 @@
-const { Logger } = require('@aws-lambda-powertools/logger')
+import { Logger } from '@aws-lambda-powertools/logger'
 
 /** @type {import('@aws-lambda-powertools/logger').Logger | null} */
 let logger = null
