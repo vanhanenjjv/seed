@@ -8,6 +8,8 @@ provider:
   memorySize: "512"
   logRetentionInDays: "7"
   architecture: "arm64"
+  environment:
+    POWERTOOLS_DEV: true
 
 functions:
   hello:
