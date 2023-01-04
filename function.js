@@ -28,7 +28,8 @@ export async function handler(event) {
 
   logger.error('something went wrong', {
     message: 'something went wrong',
-    name: 'error',
+    errorType: 'Error',
+    errorMessage: 'something went wrong',
     stack: []
   })
 
