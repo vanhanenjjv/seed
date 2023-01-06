@@ -26,7 +26,7 @@ function getLogger() {
 export async function handler(event) {
   const logger = getLogger()
 
-  logger.error('something went wrong XD', {
+  console.error('something went wrong xD', {
     'request_id': event.requestContext.requestId
   })
 
