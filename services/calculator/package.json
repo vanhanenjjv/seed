@@ -3,13 +3,13 @@
   "private": true,
   "version": "1.0.0",
   "main": "n/a",
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [],
   "author": "Janne Vanhanen <janne.vanhanen@outlook.com>",
   "license": "MIT",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.126",
+    "serverless": "^3.36.0",
     "serverless-plugin-typescript": "^2.1.5",
     "typescript": "^5.2.2"
   }
