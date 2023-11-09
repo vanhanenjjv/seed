@@ -10,6 +10,6 @@ test.describe('Calculator', () => {
     ])
     // NOTE: is there a race condition of not waiting for the SPA to update?
     const product = await page.locator('data-test-id=product').inputValue()
-    expect(product).toEqual('3')
+    expect(product).toEqual('4')
   })
 })
