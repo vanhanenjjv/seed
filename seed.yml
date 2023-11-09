@@ -1,1 +1,2 @@
-check_code_change: lerna
+before_compile:
+  - "npm install --global npm@9.5.0"
