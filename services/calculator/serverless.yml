@@ -17,4 +17,4 @@ functions:
       - httpApi: "POST /"
 
 plugins:
-  - "serverless-plugin-typescript"
+  - "serverless-esbuild"
