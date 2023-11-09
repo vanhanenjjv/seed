@@ -12,7 +12,7 @@ provider:
 
 functions:
   hello:
-    handler: "functions/sum/handler"
+    handler: "functions/sum/handler.default"
     events:
       - httpApi: "POST /"
 
