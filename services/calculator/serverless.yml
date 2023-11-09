@@ -14,7 +14,10 @@ functions:
   sum:
     handler: "functions/sum/handler.default"
     events:
-      - httpApi: "POST /"
+      - httpApi:
+          path: "/sum"
+          method: "POST"
+          cors: false
 
 plugins:
   - "serverless-esbuild"
