@@ -16,11 +16,11 @@ const handler: APIGatewayProxyHandlerV2 = async event => {
     body: JSON.stringify({ error: "Invalid input" }) 
   }
 
-  const sum = operands.reduce(reducer)
+  const product = operands.reduce(reducer)
 
   return { 
     statusCode: 200, 
-    body: JSON.stringify({ result: sum }) 
+    body: JSON.stringify({ product }) 
   }
 }
 
