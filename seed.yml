@@ -1,2 +1,5 @@
 before_compile:
   - "npm install --global npm@9.5.0"
+
+compile:
+  - "npm ci"
