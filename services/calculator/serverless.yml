@@ -10,6 +10,13 @@ provider:
   logRetentionInDays: "7"
   architecture: "arm64"
 
+  httpApi:
+    cors:
+      allowedOrigins:
+        - "http://localhost:5173"
+      allowedMethods:
+        - "POST"
+
 functions:
   sum:
     handler: "functions/sum/handler.default"
@@ -17,7 +24,6 @@ functions:
       - httpApi:
           path: "/sum"
           method: "POST"
-          cors: false
 
 plugins:
   - "serverless-esbuild"
