@@ -1,9 +1,13 @@
 {
   "name": "seed",
-  "type": "module",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
   "main": "n/a",
+  "workspaces": [
+    "services/*",
+    "client",
+    "tests"
+  ],
   "scripts": {},
   "repository": {
     "type": "git",
@@ -17,9 +21,7 @@
   },
   "homepage": "https://github.com/vanhanenjjv/seed#readme",
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.109"
   },
   "dependencies": {
-    "@aws-lambda-powertools/logger": "^1.5.0"
   }
 }

@@ -1,4 +1,4 @@
-service: "service"
+service: "calculator"
 
 provider:
   name: "aws"
@@ -8,11 +8,12 @@ provider:
   memorySize: "512"
   logRetentionInDays: "7"
   architecture: "arm64"
-  environment:
-    POWERTOOLS_DEV: true
 
 functions:
   hello:
-    handler: "function.handler"
+    handler: "functions/sum/handler"
     events:
-      - httpApi: "GET /"
+      - httpApi: "POST /"
+
+plugins:
+  - "serverless-plugin-typescript"
