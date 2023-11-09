@@ -3,3 +3,5 @@ before_compile:
 
 compile:
   - "npm ci"
+
+check_code_change: lerna

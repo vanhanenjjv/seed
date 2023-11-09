@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/vanhanenjjv/seed#readme",
   "devDependencies": {
-  },
-  "dependencies": {
+    "lerna": "^6.6.1"
   }
 }
